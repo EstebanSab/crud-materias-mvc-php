@@ -18,7 +18,7 @@ $alumnoController = new AlumnoController();
   <body>
     <nav>
       <div class="menu-div">
-          <div><a href="request.php?crud-action=mostrartodo" >Materias MVC CRUD</a></div>
+          <div><a href="request.php?left-menu-action=none">Materias MVC CRUD</a></div>
           
           <?php 
               if(isset($_SESSION["nombre-alumno"])  ) {?>

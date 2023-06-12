@@ -46,6 +46,26 @@ a:hover{
   font-size:22px;
 }
 
+.layout-left-menu a{
+  font-size:32px;
+  color:white;
+}
+
+.layout-left-menu a:hover{
+  background-color:#066442;
+  font-size:32px;
+  color:red;
+}
+
+.link-menu{
+  padding-bottom:30px;
+}
+
+.link-menu:hover{
+  padding-bottom:30px;
+  background-color:#066442;
+}
+
 
 /*------------------------------------------*/
 /*Estilo del menu derecho */
@@ -188,6 +208,22 @@ a:hover{
   text-align: center;
   border-bottom: 1px solid blue;
   font-size:20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/*------------------------------------------*/
+/*Estilo de la view promedio materias alumno*/
+
+.contanainer-mostrar-materia-promedio{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 100px   100px;
+}
+
+.contanainer-mostrar-materia-promedio > *{
+  text-align: center;
+  font-size:40px;
   padding-top: 15px;
   padding-bottom: 15px;
 }

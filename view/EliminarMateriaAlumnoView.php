@@ -1,7 +1,6 @@
 <?php require_once './config/config.php';?> 
 
  <div class="contanainer-eliminar-materia">
-  <h2>Eliminar Materia</h2> 
     <form class="form" action=<?php echo constant('BASE_URL')."/request.php"?> method="POST">
       <div class="eliminar-materia-inputs"> 
          <div >

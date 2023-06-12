@@ -1,7 +1,6 @@
 <?php require_once './config/config.php';?> 
 
 <div class="contanainer-agregar-materia">
-<h2>Agregar Materia</h2>
   <form class="form" action=<?php echo constant('BASE_URL')."/request.php"?> method="POST">
     <div class="agregar-materia-inputs">
         <div  class="agregar-materia-inputs-select" >
@@ -14,7 +13,7 @@
         </div>
         
         <div class="agregar-materia-inputs-nota">  
-             <input type="number" name="nota-materia" id="nota-materia" min="1" max="10" placeholder="Nota">
+             <input type="number" name="nota-materia" id="nota-materia" min="1" max="10" placeholder="Nota" required>
         </div>
 
         <div class="agregar-materia-inputs-submit">

@@ -15,6 +15,11 @@ class MateriaAlumnoController
 
   public function leftMenuFuncionMateria(){
     $_SESSION["left-menu-action"] = $_GET["left-menu-action"];
+    if(  $_SESSION["left-menu-action"] == "none"){
+     $_SESSION["promedio"]="";
+      $_SESSION["filtro-materia"]="";
+    }
+   
   }
 
   //Esta funcion se encarga de todas las operaciones crud
@@ -87,9 +92,15 @@ class MateriaAlumnoController
 //-----------------------------------------------------------------
 //-----------------------------------------------------------------
 
-  //Devuelve la view de filtros y funciones de promedio
-  public function viewFiltrosPromediosMateriaAlumno($mostrar){
+  //Devuelve la view de filtros  
+  public function viewFiltrosMateriaAlumno($mostrar){
     include("./view/FiltrosPromediosMateriaAlumnoView.php");
+  }
+  
+  
+   //Devuelve la view de funciones de promedio
+  public function viewPromediosMateriaAlumno($mostrar){
+    include("./view/PromediosMateriasView.php");
   }
 
   //Devuelve la view de mostrar materias alumno
