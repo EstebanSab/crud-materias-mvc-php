@@ -49,10 +49,12 @@ class AlumnoController{
   public function registrarAlumno($legajo_alumno, $nombre_alumno, $id_carrera){
     $alumnoExiste =  $this->alumnoModel->alumnoExistePorLegajo($legajo_alumno);
     $tupla = mysqli_fetch_assoc($alumnoExiste);
-
+      
     if (isset($tupla) and !empty($tupla)) {
+       $_SESSION["registro-alumno"]="YA EXISTE UN ALUMNO REGISTRADO CON ESE LEGAJO";
     } else {
       $this->alumnoModel->agregarAlumno($legajo_alumno, $nombre_alumno, $id_carrera);
+       $_SESSION["registro-alumno"]="REGISTRO EXITOSO";
     }
   }
 

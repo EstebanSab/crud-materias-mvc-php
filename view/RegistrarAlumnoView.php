@@ -21,4 +21,11 @@
         <input type="submit" value="Registrar" name="registrar-alumno" />
       </div>
       </form>
+        <?php 
+              if(isset($_SESSION["registro-alumno"])  ) {?>
+          <div style="color:red;">
+           <?php 
+              echo $_SESSION["registro-alumno"];}
+            ?>
+          </div>
     </div>
